@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 245, 231);
+}
+
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+}
+
+#nav h3 {
+  padding: 15px;
+  background-color: black;
+  border-radius: 100px;
+  font-size: 18px;
+  color: white;
+}
+
+#intro {
+  width: 100%;
+  height: 40%;
+  padding: 40px 50px;
+}
+
+#intro h1 {
+  font-size: 100px;
+  line-height: 90px;
+  letter-spacing: -1px;
+}
+
+#place {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+#place h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#hero-img {
+  width: 100%;
+  height: 70%;
+  background-image: url(https://static.punjabkesari.in/multimedia/16_47_4980506615jhtujtuk.jpg);
+  background-size: cover;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  padding: 30px 40px;
+}
+
+#about h2 {
+  width: 60%;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0px;
+}
+
+#about-pt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  padding-left: 40px;
+  border-left: 2px solid black;
+}
+
+#about-pt2 h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#icons i {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 20px;
+  color: white;
+}
+
+#work {
+  height: 55%;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  padding: 30px 40px;
+}
+
+#work1 {
+  width: 30%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#work1 h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+#work i {
+  font-size: 30px;
+}
+
+#work2 {
+  height: 100%;
+  width: 75%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work2-pt {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#work2-ptid2 {
+    margin-top:0;
+}
+
+.work2-pt:nth-child(1) {
+  border-bottom: 2px solid black;
+}
+
+.work2-pt .elem {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work2-pt .elem:nth-child(1) {
+  border-right: 2px solid black;
+}
+.work2-pt .elem:nth-child(2) {
+  padding-left: 30px;
+}
+
+.work2-pt .elem h4 {
+  font-size: 25px;
+}
