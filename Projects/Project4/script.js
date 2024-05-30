@@ -55,7 +55,7 @@ function handleSearchFuntionality() {
   });
 
   input.addEventListener("input", function () {
-    searchValue = input.value;
+    searchValue = input.value.toLowerCase();
     // if (!searchValue == 0) console.log(searchValue);
 
     const filterd_imgarr = imgarr.filter((obj) =>
