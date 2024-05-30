@@ -52,6 +52,7 @@ function handleSearchFuntionality() {
 
   input.addEventListener("blur", function () {
     overlay.style.display = "none";
+    document.querySelector(".searchdata").style.display = "none";
   });
 
   input.addEventListener("input", function () {
@@ -61,7 +62,17 @@ function handleSearchFuntionality() {
     const filterd_imgarr = imgarr.filter((obj) =>
       obj.name.toLowerCase().startsWith(searchValue)
     );
-    console.log(filterd_imgarr);
+
+    var clutter = "";
+
+    filterd_imgarr.forEach(function (obj) {
+      clutter += `<div class="res flex px-8 py-3">
+      <i class="ri-search-line font-semibold mr-5"></i>
+      <h3 class="font-semibold">${obj.name.toLowerCase()}</h3>
+      </div>`;
+    });
+    document.querySelector(".searchdata").style.display = "block";
+    document.querySelector(".searchdata").innerHTML = clutter;
   });
 }
 
